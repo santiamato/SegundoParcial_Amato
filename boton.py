@@ -25,11 +25,9 @@ class Button:
                 elif evento.unicode.isprintable():
                     self.input_text += evento.unicode
 
-        # Dibujar el fondo blanco en el área del cuadro de texto
         pygame.draw.rect(pantalla, (255, 255, 255), (850, 150, 300, 40))
         pygame.draw.rect(pantalla, (0, 0, 0), (850, 150, 300, 40), 2)
 
-        # Renderizar el texto ingresado por el usuario
         texto_ingresado = self.fuente.render(self.input_text, True, (0, 0, 0))
         pantalla.blit(texto_ingresado, (860, 160))
 
@@ -38,7 +36,6 @@ class Button:
             pantalla.blit(self.imagen, self.rect)
         pantalla.blit(self.text, self.text_rect)
 
-        # Agregar este bloque para dibujar el cuadro de texto
         if self.is_text_box:
             pygame.draw.rect(pantalla, (255, 255, 255), (850, 150, 300, 40))
             pygame.draw.rect(pantalla, (0, 0, 0), (850, 150, 300, 40), 2)
@@ -50,10 +47,10 @@ class Button:
             return True
         return False
 
-    def toggleMusic(self):
+    def activar_musica(self):
         self.musica_activa = not self.musica_activa
 
-    def changeColor(self, position):
+    def cambiar_color(self, position):
         if position[0] in range(self.rect.left, self.rect.right) and position[1] in range(self.rect.top, self.rect.bottom):
             self.text = self.fuente.render(self.texto, True, self.color_texto_seleccionado)
         else:

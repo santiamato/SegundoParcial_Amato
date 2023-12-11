@@ -257,7 +257,7 @@ def juego():
         PANTALLA.blit(fuente_texto, menu)
 
         for button in [button_nivel_1, button_nivel_2, button_nivel_3, button_salir, button_musica]:
-            button.changeColor(posicion_mouse)
+            button.cambiar_color(posicion_mouse)
             button.update(PANTALLA)
 
         for evento in pygame.event.get():
@@ -309,7 +309,6 @@ def juego():
             estado = nivel_3(tiempo_transcurrido)
         if estado == "MENU":
                 continue
-            
 
         if not estado:
             tiempo_transcurrido = time.time() - cronometro_1 
@@ -318,7 +317,6 @@ def juego():
                 menu1 = "MENU"
 
         if estado:
-            button_volver.changeColor(posicion_mouse)
             gano(tiempo_transcurrido, nombre_usuario, estado)
             button_volver.update(PANTALLA)
             
