@@ -31,7 +31,7 @@ lista_animaciones = [personaje_quieto,
                      personaje_salta,
                      personaje_camina_izquierda]
 
-personaje = Personaje(PANTALLA, personaje_quieto[0], (60,90), 80, 650, 7, -15, lista_animaciones)
+personaje = Personaje(PANTALLA, personaje_quieto[0], (70,100), 80, 650, 7, -15, lista_animaciones)
 
 # PLATAFORMA   ########################################################
 

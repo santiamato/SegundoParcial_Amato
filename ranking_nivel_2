@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "nombre": "RENATOpd",
+    "puntuacion": 3300
+  },
+  {
+    "id": 2,
+    "nombre": "asdp",
+    "puntuacion": 4200
+  },
+  {
+    "id": 3,
+    "nombre": "aaapp",
+    "puntuacion": 3500
+  },
+  {
+    "id": 4,
+    "nombre": "ds",
+    "puntuacion": 6000
+  },
+  {
+    "id": 5,
+    "nombre": "dsa",
+    "puntuacion": 5800
+  },
+  {
+    "id": 6,
+    "nombre": "das",
+    "puntuacion": 6000
+  },
+  {
+    "id": 7,
+    "nombre": "",
+    "puntuacion": 6000
+  },
+  {
+    "id": 8,
+    "nombre": "sa",
+    "puntuacion": 2700
+  },
+  {
+    "id": 9,
+    "nombre": "PEPE",
+    "puntuacion": 2700
+  }
+]

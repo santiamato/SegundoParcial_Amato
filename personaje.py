@@ -175,10 +175,6 @@ class Personaje(pygame.sprite.Sprite):
             pantalla.blit(self.corazon,(200,20))
 
     def actualizar_puntos(self):
-        ultimo_id = 2
-        ultimo_puntos = 3
-        puntos_obtenidos = self.puntuacion - self.puntuacion_vieja
-        puntaje = ultimo_puntos + puntos_obtenidos
         self.puntuacion_vieja = self.puntuacion
 
     def update(self, slave,lista_plataformas,enemigo, corazones):
